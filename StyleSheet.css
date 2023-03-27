@@ -1,0 +1,82 @@
+/* Set global font and box-sizing */
+* {
+    font-family: 'Farsan', cursive;
+    box-sizing: border-box;
+    background-color: gray;
+  }
+  
+  /* Set container width and center it */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Style the header */
+  h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 32px;
+  }
+  
+  /* Style the name sections */
+  .name-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 32px;
+  }
+  
+  /* Style the animal section */
+  .Cute, .Monkey, .Zebra, .Lion, .Panda {
+    width: 40%;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  
+  /* Style the animal names */
+  h4 {
+    font-size: 32px;
+    margin-top: 16px;
+  }
+  
+  /* Style the animal images */
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 16px;
+    box-shadow: 0px 0px 10px black;
+  }
+  
+  /* Style the show button */
+  button {
+    background-color: rgb(241, 189, 183);
+    border: black;
+    color: gray;
+    padding: 8px 16px;
+    margin-top: 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(171, 235, 198);
+  }
+  
+  /* Style the path section */
+  div[id$="-path"] {
+    display: none;
+    margin-top: 1rem;
+  }
+  
+  /* Set media query for smaller screens */
+  @media only screen and (max-width: 800px) {
+    /* Set name section to column layout */
+    .name-section {
+      flex-direction: column;
+    }
+  
+    /* Set name sections to full width */
+    .Cute, .Monkey, .Zebra, .Lion, .Panda {
+      width: 100%;
+    }
+  }
