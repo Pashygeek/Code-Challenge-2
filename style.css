@@ -2,7 +2,8 @@
 * {
     font-family: 'Farsan', cursive;
     box-sizing: border-box;
-    background-color: gray;
+    background: rgb(24,109,96);
+    background: radial-gradient(circle, rgba(24,109,96,1) 16%, rgba(26,34,101,1) 85%); 
   }
   
   /* Set container width and center it */
@@ -16,6 +17,35 @@
     text-align: center;
     font-size: 48px;
     margin-top: 32px;
+    border-radius: 50px;
+    border-style: dashed;
+    border-width: 20px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+  }
+  
+  /* Style animals*/
+  #list-characters {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: white;
+    border: 2px solid black;
+    padding: 10px;
+  }
+  
+  #list-characters{
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  #list-characters {
+    padding: 10px;
+
+  }
+  
+  #list-characters:last-of-type {
+    border-bottom: none;
   }
   
   /* Style the name sections */
@@ -27,16 +57,20 @@
   }
   
   /* Style the animal section */
-  .Cute, .Monkey, .Zebra, .Lion, .Panda {
+  .animal-section {
     width: 40%;
     margin-bottom: 32px;
     text-align: center;
+    box-sizing: border-box;
   }
   
   /* Style the animal names */
   h4 {
     font-size: 32px;
     margin-top: 16px;
+    cursor: pointer;
+    padding: 8px 10px;
+    border: black;
   }
   
   /* Style the animal images */
@@ -47,11 +81,11 @@
     box-shadow: 0px 0px 10px black;
   }
   
-  /* Style the show button */
+  /* Style the vote button */
   button {
-    background-color: rgb(241, 189, 183);
+    background-color: rgb(173, 151, 63);
     border: black;
-    color: gray;
+    color: white;
     padding: 8px 16px;
     margin-top: 16px;
     font-size: 16px;
@@ -76,7 +110,7 @@
     }
   
     /* Set name sections to full width */
-    .Cute, .Monkey, .Zebra, .Lion, .Panda {
+    .name-section {
       width: 100%;
     }
   }
